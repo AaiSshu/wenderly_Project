@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wenderly</title>
+    <link rel="stylesheet" href="wenderly.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <nav>
+      <!-- NAV BAR -->
+      <div id="wenderly_Title">
+        <i class="fa-solid fa-plane"></i><span>wenderly</span>
+      </div>
+      <div id="page_list">
+        <a href="#Home_Page">home</a>
+        <a href="#About_Us">about</a>
+        <a href="#memorable_experiences">explore</a>
+        <a href="contact.html">contact</a>
+      </div>
+      <div>
+        <a href="login.html" id="login" class="mobile_login">login</a>
+      </div>
+      <button id="mobile_taggole" onclick="showMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="mobile_page_list">
+      <a href="#Home_Page">home</a>
+      <a href="#About_Us">about</a>
+      <a href="#Explore_Page">explore</a>
+      <a href="contact.html">contact</a>
+      <div style="width: 100%">
+        <a href="login.html" class="mobile_login">login</a>
+      </div>
+    </div>
+
+    <!-- Home Page -->
+    <div class="home_page" id="Home_Page">
+      <h1>explore the <br />beauty of the world</h1>
+      <p>
+        discover amazing places at exclusive deals <br />
+        and make your journey unforgetattable.
+      </p>
+      <br />
+      <a href="#Explore_Page" id="explore_now">explore now</a>
+      <a id="learn_more">learn more</a>
+    </div>
+
+    <img
+      src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+      class="home_bg_img"
+    />
+
+    <div id="booking_container">
+      <label for="location" class="booking"
+        ><i class="fa-solid fa-location-dot"></i>
+        <p>location</p>
+        <input type="checkbox" title="location" name="location" id="location" />
+        <span>where are you going?</span>
+      </label>
+      <label for="check_in" class="booking">
+        <i class="fa-solid fa-calendar-check"></i>
+        <p>check in</p>
+        <input type="checkbox" title="check_in" name="check_in" id="check_in" />
+        <span>add date</span>
+      </label>
+      <label for="check_out" class="booking">
+        <i class="fa-solid fa-calendar-days"></i>
+        <p>check out</p>
+        <input
+          type="checkbox"
+          title="check_out"
+          name="check_in"
+          id="check_out"
+        />
+        <span>add date</span>
+      </label>
+      <label for="gueste" class="booking" style="border-right: none">
+        <i class="fa-solid fa-users"></i>
+        <p>gueste</p>
+        <input type="checkbox" title="gueste" name="gueste" id="gueste" />
+        <span>add gueste</span>
+      </label>
+      <button id="search_btn">search</button>
+    </div>
+
+    <!-- Popular Destinations -->
+    <h3 id="popular_destinations">
+      popular destinations
+      <span
+        ><a href="#memorable_experiences" id="view_all_btn">view all</a></span
+      >
+    </h3>
+
+    <div class="destinations_slider">
+      <div class="popular_des_place" title="Bali, Indonesis">
+        <img
+          src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1"
+          alt="bali, indonesis"
+        />
+        <h5>bali, indonesis</h5>
+        <p>from <span>$489</span></p>
+      </div>
+      <div class="popular_des_place" title="Santorini, Greece">
+        <img
+          src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff"
+          alt="santorini, greece"
+        />
+        <h5>santorini, greece</h5>
+        <p>from <span>$559</span></p>
+      </div>
+      <div class="popular_des_place" title="Switzeriland">
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+          alt="switzeriland"
+        />
+        <h5>switzeriland</h5>
+        <p>from <span>$669</span></p>
+      </div>
+      <div class="popular_des_place" title="Tokyo, Japan">
+        <img
+          src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf"
+          alt="tokyo, japan"
+        />
+        <h5>tokyo, japan</h5>
+        <p>from <span>$789</span></p>
+      </div>
+    </div>
+
+    <!-- About page -->
+    <div class="about_us" id="About_Us">
+      <div>
+        <h1>about us</h1>
+        <p>
+          at wenderly we believe that travels is more than just visiting new
+          place - its about creating unforgettable memories. <br /><br />
+          our mission is to help traveles explore the world with ease, comfort,
+          and the best expriences possible .
+        </p>
+      </div>
+      <div class="about_img">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+          alt="About img"
+          class="about_img"
+        />
+      </div>
+    </div>
+
+    <h1 id="why_travel_with_us">why travel with us?</h1>
+    <div id="with_us">
+      <div id="best_price">
+        <i class="fa-solid fa-sack-dollar"></i>
+        <h4>best price</h4>
+        <p>we offer the best prices and amazing deals for your journey.</p>
+      </div>
+      <div id="trusted_service">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h4>trusted service</h4>
+        <p>our team is available 24/7 to assist you anytime.</p>
+      </div>
+      <div id="handpicked_hotels">
+        <i class="fa-solid fa-hotel"></i>
+        <h4>handpicked hotels</h4>
+        <p>we partner with top-related hotels for your comfortable stay.</p>
+      </div>
+      <div id="memorable_experiences">
+        <i class="fa-solid fa-star"></i>
+        <h4>memorable expriences</h4>
+        <p>we hlep you create memories that last a lifetime.</p>
+      </div>
+    </div>
+
+    <div class="footer_scroll">
+      <!---------------- Explore Page --------------->
+      <div id="Explore_Page">
+        <h1>explore destinations</h1>
+        <div class="Explore_btn">
+          <button href="#">all</button>
+          <button href="#">beach</button>
+          <button href="#">mountains</button>
+          <button href="#">city</button>
+          <button href="#">adventures</button>
+        </div>
+        <div class="destinations_places_grid">
+          <div class="popular_des_place" title="Bali, Indonesis">
+            <img
+              src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1"
+              alt="bali, indonesis"
+            />
+            <h5>bali, indonesis</h5>
+            <p>from <span>$489</span></p>
+          </div>
+          <div class="popular_des_place" title="Santorini, Greece">
+            <img
+              src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff"
+              alt="santorini, greece"
+            />
+            <h5>santorini, greece</h5>
+            <p>from <span>$559</span></p>
+          </div>
+          <div class="popular_des_place" title="Switzeriland">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+              alt="switzeriland"
+            />
+            <h5>switzeriland</h5>
+            <p>from <span>$669</span></p>
+          </div>
+          <div class="popular_des_place" title="Tokyo, Japan">
+            <img
+              src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf"
+              alt="tokyo, japan"
+            />
+            <h5>tokyo, japan</h5>
+            <p>from <span>$789</span></p>
+          </div>
+          <div class="popular_des_place" title="maldives">
+            <img
+              src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd"
+              alt="maldives"
+            />
+            <h5>maldives</h5>
+            <p>from <span>$600</span></p>
+          </div>
+          <div class="popular_des_place" title="paris, france">
+            <img
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
+              alt="paris, france"
+            />
+            <h5>paris, france</h5>
+            <p>from <span>$000</span></p>
+          </div>
+          <div class="popular_des_place" title="new york, USA">
+            <img
+              src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2"
+              alt="new york, USA"
+            />
+            <h5>new york, USA</h5>
+            <p>from <span>$000</span></p>
+          </div>
+          <div class="popular_des_place" title="dubai , UAE">
+            <img
+              src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+              alt="dubai , UAE"
+            />
+            <h5>dubai , UAE</h5>
+            <p>from <span>$000</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Details -->
+      <div id="About_Details">
+        <div class="About_Details">
+          <div id="about_wenderly">
+            <h4>wenderly</h4>
+            <p>lets meet your next journey your best adventure yet.</p>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div>
+            <h5>quick links</h5>
+            <a href="#Home_Page">home</a>
+            <a href="#About_Us">about</a>
+            <a href="#Explore_Page">explore</a>
+            <a href="contact.html">contact</a>
+          </div>
+          <div>
+            <h5>top destionations</h5>
+            <a href="#Explore_Page">bali</a>
+            <a href="#Explore_Page">greace</a>
+            <a href="#Explore_Page">switzerland</a>
+            <a href="#Explore_Page">japan</a>
+          </div>
+          <div>
+            <h5>support</h5>
+            <a href="support.html#FAQ">FAQ</a>
+            <a href="support.html#policy">privacy policy</a>
+            <a href="support.html#terms">terms & conditions</a>
+          </div>
+          <di class="newsletter">
+            <h5>newsletter</h5>
+            <p>subscribe to get the latest travel updates and offers</p>
+            <label for="gmail" class="gmail">
+              <input type="email" title="gmail" name="gmail" id="gmail" />
+              <button style="background-color: #fff; padding: 5px 10px">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </label>
+          </di>
+        </div style="margin:5px;">
+        <p class="allrights">@ 2024 wenderly, all rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wenderly</title>
+    <link rel="stylesheet" href="wenderly.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <nav style="background: transparent">
+      <div id="wenderly_Title">
+        <i class="fa-solid fa-plane"></i><span>wenderly</span>
+      </div>
+      <div id="page_list">
+        <a href="index.html#Home_Page">home</a>
+        <a href="index.html#About_Us">about</a>
+        <a href="index.html#Explore_Page">explore</a>
+        <a href="contact.html">contact</a>
+      </div>
+      <button id="mobile_taggole" onclick="showMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="mobile_page_list">
+      <a href="index.html#Home_Page">home</a>
+      <a href="index.html#About_Us">about</a>
+      <a href="index.html#Explore_Page">explore</a>
+      <a href="contact.html">contact</a>
+    </div>
+
+    <div class="login_page">
+      <div class="login_text">
+        <h1>welcome back!</h1>
+        <p>login to continue your journey</p>
+        <p>with us and explore the world.</p>
+      </div>
+      <form action="" id="login_form">
+        <h2>login</h2>
+        <p>enter your credentils to access your account.</p>
+
+        <label for="login_email">
+          <p>email address</p>
+          <input type="email" placeholder="enter your email" id="login_email" />
+          <h6 class="login_errorMSG"></h6>
+        </label>
+        <label for="login_pass">
+          <p>password</p>
+          <input
+            type="password"
+            placeholder="enter your password"
+            id="login_pass"
+          />
+          <h6 class="login_errorMSG"></h6>
+        </label>
+        <a id="forget_pass">forget password?</a>
+        <label for="login_checkbox" class="login_checkbox">
+          <input type="checkbox" id="login_checkbox" title="*" />
+          remember me
+        </label>
+
+        <button type="submit" id="login_sub_btn">login</button>
+
+        <label style="text-align: center"
+          >don't have an account?
+          <span><a href="singUp.html" style="color: rgb(0, 13, 255)">sign up</a></span></label
+        >
+      </form>
+    </div>
+    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80" style="position: fixed; top: 70px; z-index: -1; width: 100%; height: 100%; object-fit: cover;"/>
+    <h4 style="color: green; position: absolute; bottom: 15%; left: 50%; transform: translate(-50%,50%); display: none;" id="logSucmsg">Login Succesfull!..</h4>
+  </body>
+</html>

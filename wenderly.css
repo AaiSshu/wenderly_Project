@@ -1,0 +1,638 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+html {
+  max-width: 100vw;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #ffff;
+  box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 0.429);
+  position: sticky;
+  top: 0;
+  z-index: +88888888;
+}
+#wenderly_Title {
+  font-size: 1.8rem;
+  flex: 1;
+  font-weight: bold;
+  color: rgb(0, 3, 182);
+}
+#page_list {
+  flex: 2;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  max-width: 500px;
+}
+#page_list a {
+  transition: transform 0.6s ease-in-out;
+}
+#page_list a:hover {
+  transform: translateY(-5px) scale(1.3);
+  color: #000e5e;
+}
+#login {
+  flex: 2;
+  background: #051d7a;
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px 15px;
+}
+#login:hover {
+  background-color: #0018a3;
+}
+/* Home page */
+.home_page {
+  padding: 50px 10%;
+}
+.home_bg_img {
+  position: absolute;
+  top: 70px;
+  z-index: -8888;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.home_page h1 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #fff;
+}
+.home_page p {
+  color: #fff;
+}
+#explore_now {
+  background-color: rgb(0, 0, 217);
+  color: #ffff;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 15px 5px;
+}
+#explore_now:hover {
+  background-color: #00179a;
+}
+#learn_more {
+  background-color: #ffff;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 15px 5px;
+}
+#learn_more:hover {
+  background-color: #0018a3;
+  color: #fff;
+}
+#booking_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffff;
+  max-width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  margin: 0px 10%;
+  border-radius: 20px;
+  border: 1px solid rgba(220, 220, 220, 0);
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.429);
+}
+.booking {
+  border-right: 1px solid rgba(128, 128, 128, 0.24);
+  flex: 1;
+  margin-left: 1rem;
+}
+.booking p {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.booking span {
+  color: gray;
+  font-size: 0.9rem;
+}
+#search_btn {
+  max-width: 100px;
+  color: #ffff;
+  background-color: rgb(0, 0, 110);
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-right: 2.8%;
+}
+#search_btn:hover {
+  background-color: #0018a3;
+}
+/* Popular Destinations */
+#popular_destinations {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 10%;
+}
+#view_all_btn {
+  color: rgb(0, 174, 255);
+  font-weight: bold;
+}
+#view_all_btn:hover {
+  color: #00179a;
+}
+
+/* Destinations Slider */
+.destinations_slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  margin: 20px 10%;
+}
+.popular_des_place {
+  min-width: 200px;
+  height: 200px;
+  border: 1px solid rgba(193, 190, 190, 0.299);
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.429);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+
+.popular_des_place:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.popular_des_place img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
+.popular_des_place p,
+.popular_des_place h5 {
+  padding: 5px 15px;
+}
+/* About us page */
+.about_us {
+  color: #000e5e;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 50px 5%;
+  justify-content: space-between;
+}
+.about_us div p {
+  color: black;
+  text-transform: none;
+  margin: 30px 0;
+}
+#why_travel_with_us {
+  text-align: center;
+  color: rgb(4, 4, 92);
+}
+#with_us {
+  max-width: 100%;
+  padding: 50px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.about_img {
+  flex: 2;
+  max-width: 100%;
+  height: 400px;
+  text-align: center;
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (max-width: 700px) {
+  #best_price,
+  #trusted_service,
+  #handpicked_hotels,
+  #memorable_experiences {
+    width: 200px;
+  }
+  #booking_container {
+    flex-wrap: wrap;
+  }
+  .booking {
+    min-width: 100px;
+    margin: 10px;
+  }
+}
+#best_price,
+#trusted_service,
+#handpicked_hotels,
+#memorable_experiences {
+  max-width: 300px;
+  border-right: 1px solid rgba(128, 128, 128, 0.251);
+}
+#best_price h4,
+#trusted_service h4,
+#handpicked_hotels h4,
+#memorable_experiences h4 {
+  color: rgb(0, 0, 104);
+  font-weight: bold;
+  padding: 10px 0;
+}
+/* About Details */
+.footer_scroll {
+  width: 100%;
+  height: 1000px;
+}
+#About_Details {
+  display: block;
+  background-color: rgb(2, 19, 72);
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  height: 25%;
+  top: 200px;
+}
+.mobile_page_list {
+  position: fixed;
+  left: -90%;
+  z-index: 454444;
+  display: none;
+  align-items: flex-start;
+  text-align: start;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-width: 60vw;
+  min-height: 100%;
+  background: #051d7a;
+  transition: tranform ease-in-out;
+}
+.mobile_page_list a {
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  display: block;
+  border-radius: 8px;
+  transition: 0.6s;
+}
+.mobile_page_list a:hover {
+  background-color: #fff;
+  color: #000e5e;
+}
+#mobile_login {
+  display: block;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 44;
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 650px) {
+  #page_list {
+    display: none;
+  }
+  #mobile_taggole {
+    display: flex;
+  }
+  .mobile_page_list.active {
+    display: flex;
+    left: 0;
+    transition: 0.7s;
+  }
+  .footer_scroll {
+    width: 100%;
+    height: auto;
+  }
+  #About_Details {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    top: 200px;
+    height: auto;
+    scrollbar-width: none;
+  }
+  .signup_page {
+  max-width: 100vw;
+  min-height: 150vh; }
+  .signup_text{
+    padding: 10%;
+  }
+}
+.About_Details {
+  color: #ffff;
+  min-height: 200px;
+  padding: 20px 5%;
+  border-radius: 0 0 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  font-weight: bold;
+  font-size: 1.2rem;
+  gap: 50px;
+  z-index: 55;
+  margin-bottom: 10px;
+}
+#about_wenderly {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 20px;
+}
+#about_wenderly a {
+  margin-right: 20px;
+}
+.About_Details h5 {
+  font-size: 1.3rem;
+  padding: 10px 0;
+}
+.About_Details a,
+.About_Details p {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 14px;
+  padding: 5px 0;
+  transition: transform 0.6s;
+}
+.About_Details a:hover{
+  color: rgb(255, 145, 0);
+  transform: translateX(10px) ;
+}
+#gmail:focus{
+  outline: rgb(255, 145, 0);
+  border: 2px solid  rgb(255, 145, 0);
+}
+.allrights {
+  color: #ffff;
+  border-top: 1px solid #fff;
+  border-width: 100%;
+  text-align: center;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  align-items: center;
+}
+.newsletter {
+  grid-area: 2fr;
+}
+.gmail {
+  display: flex;
+}
+
+/****** Explore Page *****/
+#Explore_Page {
+  height: 78%;
+}
+#Explore_Page h1 {
+  color: #000e5e;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 80px 0 20px 0;
+}
+.Explore_btn {
+  text-align: center;
+}
+.Explore_btn button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  background: rgba(231, 231, 231, 0.507);
+}
+.destinations_places_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 50px 5%;
+}
+/* Contact Page */
+.contact_page {
+  max-width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px 5%;
+  gap: 50px;
+}
+.contact_details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 18px;
+  margin-bottom: 50px;
+}
+.contact_info div {
+  margin: 10px 0;
+}
+.contact_details h1 {
+  font-size: 2.7rem;
+  color: #000e5e;
+  font-weight: bold;
+}
+.contact_form {
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.429);
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.contact_form input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.34);
+}
+#input_msg {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.345);
+}
+#contact_send_msg_btn {
+  background: #000e5e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#contact_page_About_Details {
+  background-color: #000e5e;
+}
+
+@media screen and (max-width: 800px) {
+  .contact_form {
+    min-width: 80vw;
+  }
+}
+
+/* Login Page */
+.login_page,
+.signup_page {
+  max-width: 100vw;
+  height: 90vh; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+  z-index: 11;
+}
+
+.login_text h1,
+.signup_text h1 {
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.login_text p,
+.signup_text p {
+  color: #fff;
+  padding: 8px 20px;
+}
+#login_form,
+#signup_form {
+  max-width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 0.429);
+  padding: 20px 50px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  z-index: 8;
+}
+#login_form h2,
+#signup_form h2 {
+  color: #051d7a;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#login_email,
+#signup_email,
+#login_pass,
+#signup_pass,
+#signup_confirm_pass,
+#Full_name {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.477);
+}
+#forget_pass {
+  text-align: end;
+  color: rgb(0, 123, 255);
+  cursor: pointer;
+}
+#login_sub_btn,
+#signup_sub_btn {
+  background: #051d7a;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+#mobile_taggole {
+  flex-direction: column;
+  margin-left: 25px;
+  gap: 5px;
+}
+#mobile_taggole span {
+  width: 20px;
+  height: 2px;
+  background-color: #000e5e;
+  color: #000e5e;
+}
+
+input:focus {
+  outline-color: #3f53c6;
+}
+#login_sub_btn:hover,
+#signup_sub_btn:hover,
+#contact_send_msg_btn:hover {
+  background: #00179a;
+}
+
+/* Support Page */
+.support_page {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+#FAQ h1,
+#policy h1,
+#terms h1 {
+  color: #000e5e;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#FAQ h3,
+#policy h3,
+#terms h3 {
+  color: #000e5e;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#FAQ p,
+#policy p,
+#terms p {
+  color: rgb(203, 115, 0);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 2rem;
+  margin: 0 0 20px 0;
+}
+input.active,
+.errorMSG,
+.login_errorMSG {
+  outline-color: red;
+  color: red;
+}
+.mobile_login.active {
+  display: none;
+}

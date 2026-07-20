@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wenderly</title>
+    <link rel="stylesheet" href="wenderly.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <nav>
+      <div id="wenderly_Title">
+        <i class="fa-solid fa-plane"></i><span>wenderly</span>
+      </div>
+      <div id="page_list">
+        <a href="index.html#Home_Page">home</a>
+        <a href="index.html#About_Us">about</a>
+        <a href="index.html#Explore_Page">explore</a>
+        <a href="contact.html">contact</a>
+        <a href="login.html">login</a>
+      </div>
+      <button id="mobile_taggole" onclick="showMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="mobile_page_list">
+      <a href="index.html#Home_Page">home</a>
+      <a href="index.html#About_Us">about</a>
+      <a href="index.html#Explore_Page">explore</a>
+      <a href="contact.html">contact</a>
+      <div style="width: 100%">
+        <a href="login.html" id="mobile_login">login</a>
+      </div>
+    </div>
+    <div class="contact_page">
+      <div class="contact_details">
+        <h1>get in touch</h1>
+        <div>
+          <p>have questions or need assistance?</p>
+          <p>we're here to help!</p>
+        </div>
+        <div class="contact_info">
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <h4>gmail</h4>
+            <p>info@wenderly.com</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <h4>phone</h4>
+            <p>+1234567890</p>
+          </div>
+          <address>
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>address</h4>
+            <p>125 travel street, adventure city, world 12345</p>
+          </address>
+        </div>
+        <h4>follow us</h4>
+        <div style="display: flex; gap: 25px">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <form action="" class="contact_form">
+          <label for="input_name"
+            ><p>your name</p>
+            <input type="text" placeholder="enter your name" id="input_name" />
+          </label>
+          <label for="input_gmail"
+            ><p>email address</p>
+            <input
+              type="email"
+              placeholder="enter your email"
+              id="input_gmail"
+            />
+          </label>
+          <label for="input_subject"
+            ><p>subject</p>
+            <input type="text" placeholder="enter subject" id="input_subject" />
+          </label>
+          <label for="input_msg">
+            <p>messaage</p>
+            <textarea
+              name="input_msg"
+              id="input_msg"
+              title="white your message..."
+              id="input_msg"
+            ></textarea>
+          </label>
+          <button type="submit" id="contact_send_msg_btn">send message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- About Details -->
+    <div id="contact_page_About_Details">
+      <div class="About_Details">
+        <div id="about_wenderly">
+          <h4>wenderly</h4>
+          <p>lets meet your next journey your best adventure yet.</p>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div>
+          <h5>quick links</h5>
+          <a href="index.html#Home_Page">home</a>
+          <a href="index.html#About_Us">about</a>
+          <a href="index.html#Explore_Page">explore</a>
+          <a href="contact.html">contact</a>
+          <a href="login.html">login</a>
+        </div>
+        <div>
+          <h5>top destionations</h5>
+          <a href="index.html#Explore_Page">bali</a>
+          <a href="index.html#Explore_Page">greace</a>
+          <a href="index.html#Explore_Page">switzerland</a>
+          <a href="index.html#Explore_Page">japan</a>
+        </div>
+        <div>
+          <h5>support</h5>
+          <a href="support.html#FAQ">FAQ</a>
+          <a href="support.html#policy">privacy policy</a>
+          <a href="support.html#terms">terms & conditions</a>
+        </div>
+        <di class="newsletter">
+          <h5>newsletter</h5>
+          <p>subscribe to get the latest travel updates and offers</p>
+          <label for="gmail" class="gmail">
+            <input type="email" title="gmail" name="gmail" id="gmail" />
+            <button style="background-color: #fff; padding: 5px 10px">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </label>
+        </di>
+      </div>
+      <p class="allrights">@ 2024 wenderly, all rights reserved.</p>
+    </div>
+  </body>
+</html>
