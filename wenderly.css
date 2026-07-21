@@ -633,12 +633,12 @@ input:focus {
   line-height: 2rem;
   margin: 0 0 20px 0;
 }
-.input-error {
-  border: 10px solid red;
-}
 .errorMSG,
 .login_errorMSG {
   color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  min-height: 18px;
 }
 .mobile_login.active {
   display: none;
